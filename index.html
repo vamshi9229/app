@@ -1,0 +1,28 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js Search Bar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>movies Search Bar</h1>
+    <form action="/search" method="post">
+        <label for="query">Search:</label>
+        <input type="text" id="query" name="query" placeholder="Enter your search query" required>
+        <button type="submit">Search</button>
+    </form>
+
+    <h1>movies insert Bar</h1>
+    <form action="/insert" method="post">
+        <label for="query">Search:</label>
+        <input type="text" id="movieName" name="movieName" placeholder="Enter movie name" required>
+        <input type="text" id="genre" name="genre" placeholder="Enter movie genre" required>
+        <input type="text" id="rating" name="rating" placeholder="Enter movie rating" required>
+
+        <button type="submit">insert</button>
+    </form>
+</body>
+</html>
